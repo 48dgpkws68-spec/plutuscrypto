@@ -1951,18 +1951,25 @@ const ICONS = {
           Source: location.href
         })
       }).then(function (r) {
-        if (!r.ok) throw new Error(r.status);
+        return r.json().catch(function () { return {}; });
+      }).then(function (result) {
+        // A 200 is not proof of delivery. An inbox that has not been confirmed yet
+        // answers with success false, and treating that as sent would hand the
+        // visitor a thank you for an enquiry nobody ever received.
+        if (String(result && result.success) !== "true") throw new Error("not delivered");
         form.reset();
         say("Thank you. We will come back to you within one business day.", "var(--ok)");
       }).catch(function () {
-        // On the preview build outbound requests are blocked, and a visitor should
-        // never hit a dead end, so fall back to their own mail client.
+        // Never leave a visitor at a dead end: open their own mail client with
+        // everything filled in, so the enquiry still arrives.
         var body = encodeURIComponent(
           "Name: " + data.name + "\nCompany: " + data.company + "\nEmail: " + data.email +
           "\nMonthly volume: " + (data.volume || "not given") + "\n\n" + data.message);
-        note.innerHTML = 'Could not send from here. <a href="mailto:' + LEAD_INBOX +
-          "?subject=Plutus%20Crypto%20enquiry&body=" + body +
-          '" style="color:var(--gold);text-decoration:underline">Open it in your mail app instead</a>.';
+        note.innerHTML = 'We could not send that from here. <a href="mailto:' + LEAD_INBOX +
+          "?subject=" + encodeURIComponent("Plutus Crypto enquiry from " + data.company) +
+          "&body=" + body +
+          '" style="color:var(--gold);text-decoration:underline">Send it from your mail app instead</a>' +
+          " and we will pick it up straight away.";
         note.style.color = "var(--muted)";
       }).then(function () { button.disabled = false; });
     });
