@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Developers | Plutus Crypto</title>
+<meta name="description" content="A REST API with predictable resources, signed webhooks, idempotency keys and a sandbox that mirrors production. SDKs for Node, Python, PHP, Ruby and Go, plugins for the usual shop platforms.">
+<meta name="theme-color" content="#08010F">
+<link rel="canonical" href="https://plutuscrypto.com/developers/">
+<meta property="og:site_name" content="Plutus Crypto">
+<meta property="og:title" content="Developers | Plutus Crypto">
+<meta property="og:description" content="A REST API with predictable resources, signed webhooks, idempotency keys and a sandbox that mirrors production. SDKs for Node, Python, PHP, Ruby and Go, plugins for the usual shop platforms.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://plutuscrypto.com/developers/">
+<meta property="og:image" content="https://plutuscrypto.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Developers | Plutus Crypto">
+<meta name="twitter:description" content="A REST API with predictable resources, signed webhooks, idempotency keys and a sandbox that mirrors production. SDKs for Node, Python, PHP, Ruby and Go, plugins for the usual shop platforms.">
+<meta name="twitter:image" content="https://plutuscrypto.com/og.png">
+<link rel="icon" href="/assets/coin-64.png" sizes="64x64">
+<link rel="icon" href="/assets/coin-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/coin-180.png">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body class="" data-path="/developers/">
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <div class="frame">
+    <a class="brand" href="/" aria-label="Plutus Crypto, home">
+      <img class="coin" src="/assets/coin-96.webp" alt="" width="34" height="34">
+      <img class="mark" src="/assets/wordmark.webp" alt="Plutus Crypto" width="140" height="19">
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="/product/">Product</a>
+      <div class="has-menu">
+        <a href="/solutions/" aria-haspopup="true">Solutions</a>
+        <div class="menu" role="menu">
+          <a role="menuitem" href="/solutions/ecommerce/"><b>Ecommerce</b><span>High ticket goods, fewer fees</span></a>
+          <a role="menuitem" href="/solutions/gaming/"><b>Gaming and iGaming</b><span>Instant deposits, wallet payouts</span></a>
+          <a role="menuitem" href="/solutions/travel/"><b>Travel</b><span>Bookings across borders</span></a>
+          <a role="menuitem" href="/solutions/luxury/"><b>Luxury retail</b><span>Above card limits, final</span></a>
+          <a role="menuitem" href="/solutions/trading/"><b>Trading and FX</b><span>Fund and defund on chain</span></a>
+          <a role="menuitem" href="/solutions/remittances/"><b>Remittances</b><span>Where banking is slow</span></a>
+          <a role="menuitem" href="/solutions/b2b/"><b>B2B trade</b><span>Invoices without the wire wait</span></a>
+          <a role="menuitem" href="/solutions/marketplaces/"><b>Marketplaces</b><span>Split and pay out sellers</span></a>
+        </div>
+      </div>
+      <a href="/pricing/">Pricing</a>
+      <a href="/developers/">Developers</a>
+      <a href="/demo/">Live demo</a>
+      <div class="has-menu">
+        <a href="/about/" aria-haspopup="true">Company</a>
+        <div class="menu" role="menu">
+          <a role="menuitem" href="/about/"><b>About Plutus</b><span>The name and the idea</span></a>
+          <a role="menuitem" href="/security/"><b>Security and compliance</b><span>Screening, finality, audit</span></a>
+          <a role="menuitem" href="/currencies/"><b>Currencies and networks</b><span>What we accept and how fast</span></a>
+          <a role="menuitem" href="/faq/"><b>Questions</b><span>Straight answers</span></a>
+          <a role="menuitem" href="/contact/"><b>Contact</b><span>Talk to a person</span></a>
+        </div>
+      </div>
+      <a class="btn btn-gold nav-cta" href="/contact/">Get started</a>
+    </nav>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" hidden>
+  <div class="drawer-scrim"></div>
+  <nav class="drawer-panel" aria-label="Mobile">
+    <div class="drawer-head">
+      <img class="mark" src="/assets/wordmark.webp" alt="Plutus Crypto" width="120" height="16">
+      <button class="drawer-close" type="button" aria-label="Close menu">Close</button>
+    </div>
+    <a class="drawer-link" href="/">Home</a>
+    <a class="drawer-link" href="/product/">Product</a>
+    <a class="drawer-link" href="/demo/">Live demo</a>
+    <a class="drawer-link" href="/pricing/">Pricing</a>
+    <a class="drawer-link" href="/developers/">Developers</a>
+    <div class="drawer-group">Solutions</div>
+    <a class="drawer-sub" href="/solutions/ecommerce/">Ecommerce</a>
+    <a class="drawer-sub" href="/solutions/gaming/">Gaming and iGaming</a>
+    <a class="drawer-sub" href="/solutions/travel/">Travel</a>
+    <a class="drawer-sub" href="/solutions/luxury/">Luxury retail</a>
+    <a class="drawer-sub" href="/solutions/trading/">Trading and FX</a>
+    <a class="drawer-sub" href="/solutions/remittances/">Remittances</a>
+    <a class="drawer-sub" href="/solutions/b2b/">B2B trade</a>
+    <a class="drawer-sub" href="/solutions/marketplaces/">Marketplaces</a>
+    <div class="drawer-group">Company</div>
+    <a class="drawer-sub" href="/about/">About Plutus</a>
+    <a class="drawer-sub" href="/security/">Security and compliance</a>
+    <a class="drawer-sub" href="/currencies/">Currencies and networks</a>
+    <a class="drawer-sub" href="/faq/">Questions</a>
+    <a class="drawer-sub" href="/contact/">Contact</a>
+    <a class="btn btn-gold" href="/contact/" style="margin-top:18px">Get started</a>
+    <p class="drawer-foot"><a href="mailto:info@plutuscrypto.com">info@plutuscrypto.com</a></p>
+  </nav>
+</div>
+
+<main id="main">
+<section class="page-hero">
+  <div class="horizon"></div>
+  <div class="frame">
+    <nav class="crumbs"><a href="/">Home</a><span>Developers</span></nav>
+    <p class="eyebrow">Developers</p>
+    <h1 class="display">Two calls to <span class="gold-text">your first payment</span></h1>
+    <p class="lede">
+      Create a payment, redirect the customer, listen for the webhook. That is the whole integration
+      for most shops. The rest of this page is for when you want more control.
+    </p>
+    <div class="stats">
+      <div class="stat"><span class="n">14</span><span class="l">endpoints</span></div>
+      <div class="stat"><span class="n">12</span><span class="l">webhook events</span></div>
+      <div class="stat"><span class="n">5</span><span class="l">official SDKs</span></div>
+      <div class="stat"><span class="n">1:1</span><span class="l">sandbox to production</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="quickstart" style="padding-top:0">
+  <div class="frame">
+    <div class="section-head reveal"><p class="eyebrow">Quickstart</p><h2 class="display">Create a payment</h2>
+      <p class="lede">Authenticate with your secret key, post an amount and a reference, and redirect the customer to the checkout URL in the response. Use the sandbox key while you build; it behaves exactly like production and pays with test coins.</p></div>
+    <div class="split split-dev">
+      <div class="reveal">
+        <div class="code">
+          <div class="code-head" id="codeTabs" role="tablist" aria-label="Language"></div>
+          <pre id="codeBody"><code></code></pre>
+        </div>
+      </div>
+      <div class="reveal" style="display:grid;gap:18px">
+        <div class="code">
+          <div class="code-head"><span class="chip">Response</span></div>
+          <pre><code>{
+  "id": "pay_7F3K92QX",
+  "status": "awaiting_payment",
+  "checkout_url": "https://pay.plutuscrypto.com/c/7F3K92QX",
+  "amount": { "value": "189.00", "currency": "EUR" },
+  "expires_at": "2026-09-09T14:37:08Z",
+  "quotes": [
+    { "asset": "BTC", "network": "bitcoin", "amount": "0.00323519",
+      "address": "bc1q…" },
+    { "asset": "USDT", "network": "tron", "amount": "205.43",
+      "address": "T…" }
+  ]
+}</code></pre>
+        </div>
+        <div class="callout"><b>Keys.</b> Two pairs per account, <code>pk_test</code> / <code>sk_test</code> and <code>pk_live</code> / <code>sk_live</code>. The secret key goes in the Authorization header as Basic auth and never in a browser. Scope keys to payments, payouts or read only from the dashboard.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="endpoints" style="padding-top:0">
+  <div class="frame">
+    <div class="section-head reveal"><p class="eyebrow">Reference</p><h2 class="display">Endpoints</h2>
+      <p class="lede">Base URL <code class="mono" style="color:var(--gold-lit)">https://api.plutuscrypto.com</code>. JSON in, JSON out, amounts as strings to keep decimals exact. Every mutating call accepts an <code class="mono" style="color:var(--gold-lit)">Idempotency-Key</code> header so a retry never creates a second payment.</p></div>
+    <div class="struck reveal" style="overflow:hidden;padding:4px 12px">
+      <table class="doc-table">
+        <thead><tr><th>Method</th><th>Path</th><th>What it does</th></tr></thead>
+        <tbody id="endpointTable"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="webhooks" style="padding-top:0">
+  <div class="frame">
+    <div class="section-head reveal"><p class="eyebrow">Webhooks</p><h2 class="display">Signed, retried, <span class="gold-text">replayable</span></h2>
+      <p class="lede">Register a URL and we post every event to it as JSON. Each delivery carries a timestamp and an HMAC signature over the raw body, so you can reject anything we did not send. Failed deliveries retry with backoff for 24 hours, and you can replay any event from the dashboard or the events endpoint.</p></div>
+    <div class="split split-dev">
+      <div class="reveal" style="display:grid;gap:18px">
+        <div class="code">
+          <div class="code-head"><span class="chip">Delivery: payment.confirmed</span></div>
+          <pre><code id="webhookSample"></code></pre>
+        </div>
+        <div class="code">
+          <div class="code-head"><span class="chip">Verify the signature, Node</span></div>
+          <pre><code>const crypto = require("crypto");
+
+function verify(rawBody, headers, secret) {
+  const ts   = headers["plutus-timestamp"];
+  const sig  = headers["plutus-signature"];
+  const mac  = crypto.createHmac("sha256", secret)
+                     .update(ts + "." + rawBody)
+                     .digest("hex");
+  const fresh = Math.abs(Date.now() / 1000 - ts) < 300;
+  return fresh && crypto.timingSafeEqual(
+    Buffer.from(mac), Buffer.from(sig));
+}</code></pre>
+        </div>
+      </div>
+      <div class="struck reveal" style="overflow:hidden;padding:4px 12px;align-self:start">
+        <table class="doc-table">
+          <thead><tr><th>Event</th><th>Fires when</th></tr></thead>
+          <tbody id="eventTable"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="errors" style="padding-top:0">
+  <div class="frame">
+    <div class="section-head reveal"><p class="eyebrow">Errors</p><h2 class="display">When something is wrong</h2>
+      <p class="lede">Errors come back with a status, a stable code you can branch on, and a message written for a human. Validation errors name the field.</p></div>
+    <div class="split split-dev">
+      <div class="struck reveal" style="overflow:hidden;padding:4px 12px">
+        <table class="doc-table">
+          <thead><tr><th>Status</th><th>Code</th><th>Meaning</th></tr></thead>
+          <tbody id="errorTable"></tbody>
+        </table>
+      </div>
+      <div class="code reveal" style="align-self:start">
+        <div class="code-head"><span class="chip">Error body</span></div>
+        <pre><code>{
+  "error": {
+    "code": "below_minimum",
+    "message": "Amount 0.40 EUR is below the
+                minimum of 1.00 EUR for USDT on tron.",
+    "field": "amount",
+    "request_id": "req_9c1e2b"
+  }
+}</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="plugins" style="padding-top:0">
+  <div class="frame">
+    <div class="section-head reveal"><p class="eyebrow">SDKs and plugins</p><h2 class="display">Or write <span class="gold-text">nothing at all</span></h2></div>
+    <div class="grid grid-2 reveal">
+      <div class="struck card">
+        <h3>Official SDKs</h3>
+        <p>Thin wrappers over the REST API that handle auth, retries and idempotency keys for you.</p>
+        <div class="code" style="margin-top:14px"><pre><code>npm install @plutuscrypto/node
+pip install plutuscrypto
+composer require plutuscrypto/sdk
+gem install plutuscrypto
+go get github.com/plutuscrypto/go</code></pre></div>
+      </div>
+      <div class="struck card">
+        <h3>Shop plugins</h3>
+        <p>Install, paste two keys, done. Each plugin adds crypto as a payment method next to the ones you have and writes the status back to the order.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:16px">
+          <span class="chip chip-gold">WooCommerce</span><span class="chip chip-gold">Magento 2</span>
+          <span class="chip chip-gold">PrestaShop</span><span class="chip chip-gold">OpenCart</span>
+          <span class="chip chip-gold">Drupal Commerce</span><span class="chip chip-gold">Shopware</span>
+          <span class="chip">Hosted page for anything else</span>
+        </div>
+      </div>
+    </div>
+    <div class="callout reveal" style="margin-top:18px"><b>Sandbox.</b> The <a href="/demo/" style="color:var(--gold);text-decoration:underline">live demo</a> is the same checkout your sandbox key will produce. Test coins are free from the dashboard faucet, and sandbox webhooks fire exactly like production ones.</div>
+  </div>
+</section>
+
+<section class="cta-band" style="padding-top:0">
+  <div class="frame">
+    <div class="struck holo">
+      <h2 class="display">Get a <span class="gold-text">sandbox key</span></h2>
+      <p class="lede" style="text-align:center;max-width:56ch">Request access and you will have keys the same day. Bring a question and a real engineer answers it.</p>
+      <div class="hero-actions" style="justify-content:center;margin-top:0">
+        <a class="btn btn-gold" href="/contact/">Request access</a>
+        <a class="btn btn-ghost" href="mailto:info@plutuscrypto.com?subject=API%20question">Ask a question</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="frame">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="/"><img class="coin" src="/assets/coin-96.webp" alt="" width="34" height="34">
+          <img class="mark" src="/assets/wordmark.webp" alt="Plutus Crypto" width="140" height="19"></a>
+        <p class="footer-blurb">
+          Crypto payment infrastructure for businesses that would rather be paid in their own currency.
+        </p>
+        <p style="margin-top:14px;font-size:.875rem">
+          <a href="mailto:info@plutuscrypto.com" style="color:var(--gold)">info@plutuscrypto.com</a>
+        </p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="/product/#checkout">Hosted checkout</a></li>
+          <li><a href="/product/#widget">Drop in widget</a></li>
+          <li><a href="/product/#links">Payment links</a></li>
+          <li><a href="/product/#terminal">In store terminal</a></li>
+          <li><a href="/product/#payouts">Payouts and refunds</a></li>
+          <li><a href="/demo/">Live demo</a></li>
+          <li><a href="/pricing/">Pricing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Solutions</h4>
+        <ul>
+          <li><a href="/solutions/ecommerce/">Ecommerce</a></li>
+          <li><a href="/solutions/gaming/">Gaming and iGaming</a></li>
+          <li><a href="/solutions/travel/">Travel</a></li>
+          <li><a href="/solutions/luxury/">Luxury retail</a></li>
+          <li><a href="/solutions/trading/">Trading and FX</a></li>
+          <li><a href="/solutions/remittances/">Remittances</a></li>
+          <li><a href="/solutions/b2b/">B2B trade</a></li>
+          <li><a href="/solutions/marketplaces/">Marketplaces</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Developers</h4>
+        <ul>
+          <li><a href="/developers/#quickstart">Quickstart</a></li>
+          <li><a href="/developers/#endpoints">API reference</a></li>
+          <li><a href="/developers/#webhooks">Webhooks</a></li>
+          <li><a href="/developers/#errors">Error codes</a></li>
+          <li><a href="/developers/#plugins">Plugins and SDKs</a></li>
+          <li><a href="/demo/">Sandbox</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about/">About Plutus</a></li>
+          <li><a href="/security/">Security and compliance</a></li>
+          <li><a href="/currencies/">Currencies and networks</a></li>
+          <li><a href="/faq/">Questions</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/privacy/">Privacy</a></li>
+          <li><a href="/terms/">Website terms</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-note">
+      <span>© 2026 Plutus Crypto · Payments in crypto, settled in your currency</span>
+      <span class="mono">plutuscrypto.com</span>
+    </div>
+  </div>
+</footer>
+
+<div class="dock" id="dock" aria-hidden="true">
+  <a class="btn btn-gold" href="/demo/">Open the demo</a>
+  <a class="btn btn-ghost" href="/contact/">Talk to us</a>
+</div>
+
+<script src="/assets/site.js" defer></script>
+</body>
+</html>
