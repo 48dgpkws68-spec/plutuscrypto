@@ -1,33 +1,31 @@
-# Plutuscrypto
+# Plutus Crypto
 
-> Accept Bitcoin, Ethereum, XRP, Solana and stablecoins at checkout, in store or by link. Rate locked at payment, settled to your bank the next business day, three percent all in.
+> Crypto payment gateway for businesses in most of the European Economic Area and the United Kingdom: accept Bitcoin, Ethereum, XRP, Solana and the stablecoins USDT and USDC, and get paid in euros, pounds or dollars.
 
-## Contact
-
-- Email: info@plutuscrypto.com
+Plutus Crypto charges three percent per transaction, everything included (conversion, blockchain network fees and settlement); there is no monthly fee, no setup fee and no chargeback fee, with a better rate above one million per month. The rate is locked for 15 minutes when the customer opens the payment and stays locked while the payment confirms. Confirmed payments settle to the merchant's bank account the next business day by SEPA or Faster Payments. Ways to take payments: payment links, a hosted checkout, a drop in widget, an in store terminal, payouts and refunds, recurring billing, and plugins for WooCommerce, Magento 2, PrestaShop, OpenCart, Drupal Commerce and Shopware; developers get a REST API with signed webhooks and SDKs for Node, Python, PHP, Ruby and Go. Opening an account means a business verification that takes a few days. The demo and dashboard on the website are a sandbox simulation. Contact: info@plutuscrypto.com, reply within one business day.
 
 ## Main pages
-
-- [Plutus Crypto · accept crypto, bank euros](https://plutuscrypto.com/): Accept Bitcoin, Ethereum, XRP, Solana and stablecoins at checkout, in store or by link. Rate locked at payment, settled to your bank the next business day, three percent all in.
-- [About Plutus | Plutus Crypto](https://plutuscrypto.com/about/): Plutus was the Greek god of wealth, blinded so that he would hand out fortune without prejudice. That is the idea behind a payment network that does not care which chain, wallet or country your customer comes from.
-- [Contact | Plutus Crypto](https://plutuscrypto.com/contact/): Tell us what you sell and where. We reply within one business day with the account structure, the rate and the integration route that fits.
-- [Currencies and networks | Plutus Crypto](https://plutuscrypto.com/currencies/): Bitcoin, Ethereum, XRP, Solana, Litecoin, Bitcoin Cash, Dash, Polygon, Tron and the stablecoins USDT and USDC across eight networks, with the confirmations we wait for and how long they take.
-- [Live demo | Plutus Crypto](https://plutuscrypto.com/demo/): A working crypto checkout in your browser. Create a payment as the merchant, pay it as the customer, scan a real QR code, and watch it land in the dashboard.
-- [Developers | Plutus Crypto](https://plutuscrypto.com/developers/): A REST API with predictable resources, signed webhooks, idempotency keys and a sandbox that mirrors production. SDKs for Node, Python, PHP, Ruby and Go, plugins for the usual shop platforms.
-- [Questions | Plutus Crypto](https://plutuscrypto.com/faq/): Straight answers about cost, payments, settlement, compliance and integration for accepting crypto with Plutus Crypto.
-- [Pricing | Plutus Crypto](https://plutuscrypto.com/pricing/): Three percent per transaction, everything included. No monthly fee, no setup fee, no chargeback fee. Add your own surcharge and turn crypto into a margin.
-- [Privacy | Plutus Crypto](https://plutuscrypto.com/privacy/): What this website collects, what it does with it, and what it does not do.
-- [Product | Plutus Crypto](https://plutuscrypto.com/product/): Hosted checkout, a drop in widget, payment links, an in store terminal, payouts and refunds, on and off ramp, a merchant dashboard and recurring billing. One account for every way to get paid in crypto.
-- [Security and compliance | Plutus Crypto](https://plutuscrypto.com/security/): Screening on every incoming transaction, blockchain finality instead of chargebacks, no card data in scope, signed webhooks, roles, two factor sign in and an exportable audit trail.
-- [Solutions | Plutus Crypto](https://plutuscrypto.com/solutions/): Where crypto payments earn their place: ecommerce, gaming, travel, luxury retail, trading, remittances, B2B trade and marketplaces.
-- [B2B trade | Plutus Crypto](https://plutuscrypto.com/solutions/b2b/): An invoice to a customer in another country is paid by wire, arrives short of fees, lands days later and has to be matched by hand. A payment link on the invoice does all of that better.
-- [Ecommerce | Plutus Crypto](https://plutuscrypto.com/solutions/ecommerce/): Crypto buyers spend more per order and never charge back. For a shop selling anything above a hundred euros, that is a margin line, not a curiosity.
-- [Gaming and iGaming | Plutus Crypto](https://plutuscrypto.com/solutions/gaming/): Players want to deposit now and withdraw tonight, from wherever they are. Cards decline, banks are slow and disputes eat the margin. Crypto does the job the way the player expects.
-- [Luxury retail | Plutus Crypto](https://plutuscrypto.com/solutions/luxury/): A watch, a piece of jewellery, a car. The buyer is standing in front of you with the means to pay and a card that stops at five thousand. Crypto has no limit, clears in minutes and cannot be pulled back.
-- [Marketplaces | Plutus Crypto](https://plutuscrypto.com/solutions/marketplaces/): A buyer pays once. The platform keeps its commission and the rest belongs to one or several sellers, each of whom wants paying in their own way. Splitting and paying out is where platforms spend their engineering time.
-- [Remittances | Plutus Crypto](https://plutuscrypto.com/solutions/remittances/): Some corridors are slow, some are expensive, and some are simply closed to correspondent banking. Stablecoins move a euro
-- [Trading and FX | Plutus Crypto](https://plutuscrypto.com/solutions/trading/): Clients want to fund an account from a wallet and withdraw to one. Your ledger, your auditor and your regulator want everything in the currency you report in. Both are possible at once.
-- [Travel | Plutus Crypto](https://plutuscrypto.com/solutions/travel/): A traveller in one country books a room in another and pays in a third currency. Cards decline, conversion fees hide in the rate, and the money reaches you days after the guest has checked out.
-- [Website terms | Plutus Crypto](https://plutuscrypto.com/terms/): The terms that apply to using plutuscrypto.com and its demo. The payment service itself is governed by the merchant agreement signed at onboarding.
+- [Crypto Payment Gateway for Business](https://plutuscrypto.com/): Accept Bitcoin, Ethereum, XRP, Solana and stablecoins online, in store or by link. Rate locked at payment, paid to your bank next business day, 3% all in.
+- [About Plutus](https://plutuscrypto.com/about/): Plutus was the Greek god of wealth, blinded so he would give without prejudice. Our payment network works the same for any chain, wallet or country.
+- [Contact](https://plutuscrypto.com/contact/): Tell us what you sell and where. We reply within one business day with the account structure, the rate and the integration route that fits.
+- [Accept Bitcoin, Ethereum and Stablecoins](https://plutuscrypto.com/currencies/): How to accept Bitcoin as a business, step by step, plus every coin and stablecoin we take, the confirmations we wait for and how long each one takes.
+- [How to accept Bitcoin payments](https://plutuscrypto.com/currencies/#accept-bitcoin): six steps from first contact to the first bank payout, plus Bitcoin facts on confirmations, refunds and VAT with sources
+- [Live Crypto Checkout Demo](https://plutuscrypto.com/demo/): A working crypto checkout in your browser. Create a payment as the merchant, pay it as the customer, scan a real QR code, and watch it land in the dashboard.
+- [Crypto Payment API and Webhooks](https://plutuscrypto.com/developers/): A REST API with signed webhooks, idempotency keys and a sandbox that mirrors production. SDKs for Node, Python, PHP, Ruby and Go, plus shop plugins.
+- [Crypto Payments FAQ for Merchants](https://plutuscrypto.com/faq/): Straight answers for merchants about cost, payments, settlement, compliance and integration when you accept crypto with Plutus Crypto.
+- [Pricing: 3% per Crypto Payment, All In](https://plutuscrypto.com/pricing/): Three percent per transaction, everything included. No monthly fee, no setup fee, no chargeback fee. Add your own surcharge and turn crypto into a margin.
+- [Privacy](https://plutuscrypto.com/privacy/): What this website collects, what it does with it, and what it does not do.
+- [Crypto Checkout, Payment Links and POS](https://plutuscrypto.com/product/): Hosted checkout, drop in widget, payment links, in store terminal, payouts, refunds and recurring billing. One account for every way to get paid in crypto.
+- [Security and compliance](https://plutuscrypto.com/security/): Every incoming transaction screened, blockchain finality instead of chargebacks, no card data in scope, signed webhooks, roles, two factor and an audit trail.
+- [Crypto Payments by Industry](https://plutuscrypto.com/solutions/): Where crypto payments earn their place: ecommerce, gaming, travel, luxury retail, trading, remittances, B2B trade and marketplaces.
+- [Crypto Payments for B2B Invoices](https://plutuscrypto.com/solutions/b2b/): Cross-border invoices paid by wire arrive late, short of fees and need matching by hand. A crypto payment link on the invoice solves all three at once.
+- [Accept Crypto in Your Online Shop](https://plutuscrypto.com/solutions/ecommerce/): Crypto buyers spend more per order and never charge back. For a shop selling anything above a hundred euros, that is a margin line, not a curiosity.
+- [Crypto Payments for Gaming and iGaming](https://plutuscrypto.com/solutions/gaming/): Players want to deposit now and withdraw tonight from anywhere. Cards decline, banks are slow and disputes eat margin. Crypto works the way players expect.
+- [Crypto Payments for Luxury Retail](https://plutuscrypto.com/solutions/luxury/): A watch, jewellery, a car: the buyer can pay but the card stops at five thousand. Crypto has no card limit, clears in minutes and cannot be charged back.
+- [Crypto Payments for Marketplaces](https://plutuscrypto.com/solutions/marketplaces/): A buyer pays once. The platform keeps its commission and pays one or several sellers the way each prefers. Split incoming payments and pay out in crypto.
+- [Stablecoin Remittances Across Borders](https://plutuscrypto.com/solutions/remittances/): Some corridors are slow, some expensive and some closed to correspondent banking. Stablecoins move a euro's worth of value across any of them in under a minute.
+- [Crypto Deposits for Trading and FX](https://plutuscrypto.com/solutions/trading/): Clients fund accounts from a wallet and withdraw to one, while your ledger, auditor and regulator want one reporting currency. You can have both at once.
+- [Crypto Payments for Travel Businesses](https://plutuscrypto.com/solutions/travel/): A traveller books a room abroad and pays in a third currency. Cards decline and FX fees hide in the rate. Crypto payments reach your bank next business day.
+- [Website terms](https://plutuscrypto.com/terms/): The terms that apply to using plutuscrypto.com and its demo. The payment service itself is governed by the merchant agreement signed at onboarding.
 
 Sitemap with all pages: https://plutuscrypto.com/sitemap.xml
